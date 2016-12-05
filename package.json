@@ -1,0 +1,25 @@
+{
+  "name": "bs-wp",
+  "version": "1.0.0",
+  "description": "Browsersync Webpack Boilerplates.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanafe/bs-wp.git"
+  },
+  "author": "zhanafe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhanafe/bs-wp/issues"
+  },
+  "homepage": "https://github.com/zhanafe/bs-wp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4"
+  }
+}
