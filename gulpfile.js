@@ -11,7 +11,7 @@ const webpackCompiler = webpack(webpackConfig);
 const webpackDevMiddleware = require('webpack-dev-middleware')(webpackCompiler, {
   publicPath: webpackConfig.output.publicPath,
   stats: { colors: true }
-  });
+});
 
 webpackCompiler.plugin('done', stats => { bs.reload(); });
 
@@ -19,4 +19,4 @@ Object.assign(bsConfig, { middleware: [webpackDevMiddleware] });
 
 gulp.task('dev', () => {
   bs.init(bsConfig);
-  });
+});
