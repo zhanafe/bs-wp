@@ -17,9 +17,22 @@
   },
   "homepage": "https://github.com/zhanafe/bs-wp#readme",
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-latest": "^6.16.0",
     "browser-sync": "^2.18.2",
+    "css-loader": "^0.26.1",
     "gulp": "^3.9.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
   }
 }
