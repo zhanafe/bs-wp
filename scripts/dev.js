@@ -14,7 +14,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware')(webpackCompiler, 
 webpackCompiler.plugin('done', stats => { bs.reload(); });
 
 Object.assign(bsConfig, {
-  server: 'src'
+  server: 'src',
   middleware: [webpackDevMiddleware]
 });
 
