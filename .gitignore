@@ -25,5 +25,4 @@ bower_components
 .sublime*
 .tmp
 
-# keep
 dist

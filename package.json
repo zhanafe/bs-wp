@@ -1,17 +1,22 @@
 {
   "name": "bs-wp",
-  "version": "1.0.0",
-  "description": "Browsersync Webpack Boilerplates.",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Browsersync Webpack Boilerplates",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "node ./scripts/dev.js",
+    "prebuild": "npm run clean",
+    "build": "gulp && webpack -p --progress --colors",
+    "prestart": "npm run build",
+    "start": "node ./scripts/stage.js",
+    "clean": "rm -rf ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhanafe/bs-wp.git"
   },
   "author": "zhanafe",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/zhanafe/bs-wp/issues"
   },
@@ -22,17 +27,20 @@
     "babel-preset-latest": "^6.16.0",
     "browser-sync": "^2.18.2",
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
-    "style-loader": "^0.13.1",
+    "gulp-htmlmin": "^3.0.0",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
   },
   "babel": {
     "presets": [
       "latest"
     ]
-  },
-  "dependencies": {
-    "normalize.css": "^5.0.0"
   }
 }
